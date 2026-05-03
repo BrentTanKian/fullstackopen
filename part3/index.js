@@ -14,6 +14,7 @@ const generateId = () => {
 }
 
 app.post('/api/persons', (request, response) => {
+  console.log(request.body)
   const body = request.body
 
   if (!body.content) {
