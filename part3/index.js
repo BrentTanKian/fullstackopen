@@ -5,6 +5,8 @@ const app = express()
 app.use(cors())
 app.use(express.static('dist'))
 
+app.use(express.json())
+
 const Person = require('./models/person')
 
 const generateId = () => {
